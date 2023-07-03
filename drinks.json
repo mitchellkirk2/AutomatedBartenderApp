@@ -1,0 +1,231 @@
+[
+  {
+    "name": "Vodka Soda",
+    "ingredients": [
+      {
+        "drink": "Vodka",
+        "amount": 60
+      },
+      {
+        "drink": "Club Soda",
+        "amount": 100
+      }
+    ]
+  },
+  {
+    "name": "Whiskey and Coke",
+    "ingredients": [
+      {
+        "drink": "Whiskey",
+        "amount": 60
+      },
+      {
+        "drink": "Coke",
+        "amount": 100
+      }
+    ]
+  },
+  {
+    "name": "Margarita",
+    "ingredients": [
+      {
+        "drink": "Tequila",
+        "amount": 60
+      },
+      {
+        "drink": "Lime Juice",
+        "amount": 30
+      },
+      {
+        "drink": "Simple Syrup",
+        "amount": 30
+      }
+    ]
+  },
+  {
+    "name": "Rum and Coke",
+    "ingredients": [
+      {
+        "drink": "Rum",
+        "amount": 60
+      },
+      {
+        "drink": "Coke",
+        "amount": 100
+      }
+    ]
+  },
+  {
+    "name": "Brandy Sour",
+    "ingredients": [
+      {
+        "drink": "Brandy",
+        "amount": 60
+      },
+      {
+        "drink": "Lime Juice",
+        "amount": 30
+      },
+      {
+        "drink": "Simple Syrup",
+        "amount": 30
+      }
+    ]
+  },
+  {
+    "name": "Amaretto Sour",
+    "ingredients": [
+      {
+        "drink": "Amaretto",
+        "amount": 60
+      },
+      {
+        "drink": "Lime Juice",
+        "amount": 30
+      },
+      {
+        "drink": "Simple Syrup",
+        "amount": 30
+      }
+    ]
+  },
+  {
+    "name": "Vodka Cranberry",
+    "ingredients": [
+      {
+        "drink": "Vodka",
+        "amount": 60
+      },
+      {
+        "drink": "Cranberry Juice",
+        "amount": 100
+      }
+    ]
+  },
+  {
+    "name": "Whiskey Sour",
+    "ingredients": [
+      {
+        "drink": "Whiskey",
+        "amount": 60
+      },
+      {
+        "drink": "Lime Juice",
+        "amount": 30
+      },
+      {
+        "drink": "Simple Syrup",
+        "amount": 30
+      }
+    ]
+  },
+  {
+    "name": "Gin Fizz",
+    "ingredients": [
+      {
+        "drink": "Gin",
+        "amount": 60
+      },
+      {
+        "drink": "Lime Juice",
+        "amount": 30
+      },
+      {
+        "drink": "Club Soda",
+        "amount": 100
+      }
+    ]
+  },
+  {
+    "name": "Tequila Sunrise",
+    "ingredients": [
+      {
+        "drink": "Tequila",
+        "amount": 60
+      },
+      {
+        "drink": "Orange Juice",
+        "amount": 100
+      }
+    ]
+  },
+  {
+    "name": "Mojito",
+    "ingredients": [
+      {
+        "drink": "Rum",
+        "amount": 90
+      },
+      {
+        "drink": "Lime Juice",
+        "amount": 30
+      },
+      {
+        "drink": "Simple Syrup",
+        "amount": 30
+      },
+      {
+        "drink": "Club Soda",
+        "amount": 90
+      }
+    ]
+  },
+  {
+    "name": "Sex on the Beach",
+    "ingredients": [
+      {
+        "drink": "Vodka",
+        "amount": 90
+      },
+      {
+        "drink": "Peach Schnapps",
+        "amount": 60
+      },
+      {
+        "drink": "Cranberry Juice",
+        "amount": 60
+      },
+      {
+        "drink": "Orange Juice",
+        "amount": 60
+      }
+    ]
+  },
+  {
+    "name": "Long Island Iced Tea",
+    "ingredients": [
+      {
+        "drink": "Vodka",
+        "amount": 30
+      },
+      {
+        "drink": "Tequila",
+        "amount": 30
+      },
+      {
+        "drink": "Rum",
+        "amount": 30
+      },
+      {
+        "drink": "Gin",
+        "amount": 30
+      },
+      {
+        "drink": "Triple Sec",
+        "amount": 30
+      },
+      {
+        "drink": "Lemon Juice",
+        "amount": 30
+      },
+      {
+        "drink": "Simple Syrup",
+        "amount": 30
+      },
+      {
+        "drink": "Coke",
+        "amount": 90
+      }
+    ]
+  }
+]
