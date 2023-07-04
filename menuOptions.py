@@ -10,7 +10,14 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 import json
+import serial
 
+serial_port = 'COM4' #replace with actual serial port
+baud_rate = 9600
+ser = serial.Serial(serial_port, baud_rate)
+
+response = ser.readline().decode().strip()
+print(f'Response from Arduino: {response}')
 
 class Ui_MenuWindow(object):
     def setupUi(self, MenuWindow):
@@ -46,6 +53,8 @@ class Ui_MenuWindow(object):
         self.retranslateUi(MenuWindow)
         QtCore.QMetaObject.connectSlotsByName(MenuWindow)
 
+        self.pourButton.clicked.connect(self.send_pour_command)
+
     def retranslateUi(self, MenuWindow):
         _translate = QtCore.QCoreApplication.translate
         MenuWindow.setWindowTitle(_translate("MenuWindow", "MainWindow"))
@@ -61,6 +70,30 @@ class Ui_MenuWindow(object):
             drink_name = drink['name']
             self.menuOptions.addItem(drink_name)
 
+    def send_pour_command(self):
+        selected_drink = self.menuOptions.currentItem().text()
+
+        with open('drinks.json') as file:
+            drinks_data = json.load(file)
+
+        # Check if the drink exists in the drink data
+        for drink in drinks_data:
+            if drink['name'] == selected_drink:
+                json_message = {
+                    "command": "pour",
+                    "name": selected_drink,
+                    **drink
+                }
+
+                json_string = json.dumps(json_message)
+                print("JSON: ", json_string)
+                ser.write(json_string.encode())
+
+                print("Command sent!")
+                break  # Exit the loop once a match is found
+
+        return
+
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
@@ -68,4 +101,5 @@ if __name__ == "__main__":
     ui = Ui_MenuWindow()
     ui.setupUi(MenuWindow)
     MenuWindow.show()
+    ser.close()
     sys.exit(app.exec_())
