@@ -12,7 +12,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 import json
 import serial
 
-serial_port = 'COM4' #replace with actual serial port
+serial_port = 'COM7' #replace with actual serial port
 baud_rate = 9600
 ser = serial.Serial(serial_port, baud_rate)
 
@@ -86,8 +86,10 @@ class Ui_MenuWindow(object):
                 }
 
                 json_string = json.dumps(json_message)
-                print("JSON: ", json_string)
+                print(json_string)
                 ser.write(json_string.encode())
+                ser.write(b'\n')
+
 
                 print("Command sent!")
                 break  # Exit the loop once a match is found
